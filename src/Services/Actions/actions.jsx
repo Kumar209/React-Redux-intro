@@ -1,10 +1,11 @@
 // Creating an action functions for the Add to cart UI button.
-//We can't pass string in the type because
-import { ADD_TO_CART } from "../constants"
+//We won't pass string in the type;
+import { ADD_TO_CART } from "../constants";
+
 export const addToCart = (data) => {
     return{
         type: ADD_TO_CART,
-        data: data
+        data: data   //data will be like iphone image, name, price;
     }
 }
 
