@@ -1,12 +1,11 @@
-import './App.css'
-import User from './User'
+import React from "react";
+import HomeContainer from "./containers/HomeContainer";
+import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
-      <h1>App component</h1>
-      <User />
+      <HomeContainer />
     </div>
   )
 }
