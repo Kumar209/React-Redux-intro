@@ -1,0 +1,1 @@
+//It is the Root reducer. Basically it combines all the reducers present.
