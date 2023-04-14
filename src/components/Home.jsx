@@ -4,14 +4,9 @@ import cart from "../assets/cart.png";
 
 const Home = (props) => {
   //used to show data recieved from container file
-  console.warn("props", props);
+  console.warn("Home", props);
   return (
     <div>
-      <div className="add-to-cart">
-        <span className="cart-count">10</span>
-        <img src={cart} />
-      </div>
-
       <h1>Home Component</h1>
       <div className="cart-wrapper">
         <div className="img-wrapper item">

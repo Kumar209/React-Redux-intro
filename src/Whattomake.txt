@@ -12,4 +12,19 @@ Make Redux wrapper in index file
 what is provider -- It makes the Redux store available to any nested components that need to access the Redux store
 Make store in index file use createStore library using root reducer
 Check Data flow in console
+
+//Steps based on components and its functionality
 Call Action on button click ( can be different on the different components)
+
+Add Data in Create
+   1- Get 1 item in cart
+   2- Make some style for cart items
+   3- Push multiple item in cart
+   4- Show multiple count in cart
+
+
+Now I want to pass the data to Header component
+   1- Make Header component
+   2- Make Header container
+   3- Check Data flow
+   4- Show Cart Count in Header Component

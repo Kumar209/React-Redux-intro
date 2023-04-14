@@ -3,7 +3,7 @@
 import { ADD_TO_CART } from "../constants";
 
 export const addToCart = (data) => {
-    console.warn("actions", data);
+    // console.warn("actions", data);
     return{
         type: ADD_TO_CART,
         data: data   //data will be like iphone image, name, price;

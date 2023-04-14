@@ -9,7 +9,8 @@ import { addToCart } from "../Services/Actions/actions"
 
 //Used to recieve data from reducer(state is data recieved from reducer) and then that data used in react component
 const mapStateToProps = state => ({
-    cardData: state
+    // cardData: state
+    data:state.cardItems
 });
 
 //Used to send action to the component to be used as an action from component
