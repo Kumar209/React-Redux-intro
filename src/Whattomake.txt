@@ -1,0 +1,15 @@
+Setup Reactjs with components
+Make the file structured
+Make container through which you will connect react + redux
+Setup Redux folders
+   1- Actions : action file which contain actions of component
+   2- Reducers: Create reducers for the actions and then combine them all to root reducer(index)
+   3- constant file: Used to store constant variable which can be used in action and reducer
+
+Create container file with setup of react-redux connection
+
+Make Redux wrapper in index file
+what is provider -- It makes the Redux store available to any nested components that need to access the Redux store
+Make store in index file use createStore library using root reducer
+Check Data flow in console
+Call Action on button click ( can be different on the different components)

@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+import { legacy_createStore as createStore } from "redux";
+import { Provider } from "react-redux";
+import rootReducer from "./Services/Reducers/index";
+const store = createStore(rootReducer);
+// Through consoling you can check your working of store is complete or note, it wills show you object which contains all data
+// console.warn("store data", store);  
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
-)
+  </Provider>
+);

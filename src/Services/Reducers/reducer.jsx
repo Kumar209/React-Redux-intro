@@ -10,6 +10,7 @@ export default function cardItems(state=initialState, action){
     //eslint-diable-next-line default-case
     switch(action.type){
         case ADD_TO_CART:
+            console.warn("reducer", action);
             return {
                 ...StaticRange,     //old value
                 cardData:action.data     //new value updated

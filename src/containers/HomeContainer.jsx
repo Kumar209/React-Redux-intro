@@ -7,11 +7,12 @@ import { connect } from "react-redux";
 import Home from "../components/Home";
 import { addToCart } from "../Services/Actions/actions"
 
-
+//Used to recieve data from reducer(state is data recieved from reducer) and then that data used in react component
 const mapStateToProps = state => ({
-
+    cardData: state
 });
 
+//Used to send action to the component to be used as an action from component
 const mapDispatchToProps = dispatch => ({
     addToCartHandler: data => dispatch(addToCart(data))
 });
