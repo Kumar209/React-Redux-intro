@@ -3,6 +3,7 @@ import iphone from "../assets/iphone.png";
 
 const Home = (props) => {
   //used to show data recieved from container file
+  //Used
   console.warn("Home", props);
   return (
     <div>
@@ -25,8 +26,7 @@ const Home = (props) => {
           </button>
 
           <button className="btn2"
-            onClick={() => {
-              props.removeToCartHandler();
+            onClick={() => { props.removeToCartHandler();
             }}
           >
             Remove To Cart
